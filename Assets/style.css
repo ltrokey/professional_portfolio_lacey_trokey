@@ -15,18 +15,38 @@ header {
     height: 515px;
     margin: 20px;
     text-align:center;
-    /* color: white; */
+    background-color: white;
     border: 5px;
     border-style: solid;
     border-color:lightgray;
     border-radius: 8px;
-    & h1 {
-        
-    }
 }
 
 .container {
     position: relative;
+    & h1 {
+        padding:8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 55%;
+        right: 10%;
+        font-family: fantasy, cursive;
+        font-style:italic;
+        font-size: 60px;
+        letter-spacing: 10px;
+        color:darkblue;
+        text-shadow: 2px 2px white;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8pt;
+        display:inline-block;
+        position:absolute;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
 }
 
 .image1 {
