@@ -38,6 +38,13 @@ List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
+<!-- Heart Book Photo - Image by <a href="https://pixabay.com/users/dariuszsankowski-1441456/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1100254">Dariusz Sankowski</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1100254">Pixabay</a> -->
+
+<!-- Space Photo - Image by Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a> on <a href="https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   -->
+
+   <!-- Coming soon image by https://www.needpix.com/photo/download/1047598/coming-soon-coming-soon-message-announce-announcement-cursive-notice-patience -->
+
 If you followed tutorials, include links to those here as well.
 
 ## License
