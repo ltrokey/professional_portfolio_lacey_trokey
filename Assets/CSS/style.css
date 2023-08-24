@@ -54,7 +54,7 @@ aside {
         text-shadow: 2px 2px goldenrod;
         word-spacing: 50px;
         letter-spacing: 10px;
-        font-size: 30px;
+        bottom: 60%;
     }
   }
 
@@ -75,6 +75,25 @@ article {
         font-size: 20px;
     }
 }
+
+.container_feature {
+    height:fit-content;
+    padding: 10px;
+    border-left-style: solid;
+    border-color:lightskyblue;
+    object-position:center;
+    position: relative;
+    & h3 {
+        font-family: fantasy, cursive;
+        letter-spacing: 10px;
+        color: red;
+        text-shadow: 2px 2px white;
+        top:5%;
+        position:absolute;
+        /* z-index: 3; */
+    }
+}
+
 .container {
     position: relative;
     height: 515px;
@@ -132,6 +151,15 @@ article {
     padding: 5px;
 }
 
+.image3 {
+        position:relative;
+        height: 600px;
+        width: 1000px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+}
 
 /* 
 @media screen and (max-width: 768px) {
