@@ -138,27 +138,33 @@ article {
     border-color:lightskyblue;
     position: relative;
     & h3 {
+        top:87%;
+        left: 5%;
+        padding:5px;
         position:absolute;
         font-family: fantasy, cursive;
+        font-weight: bolder;
         letter-spacing: 10px;
-        color: red;
-        text-shadow: 2px 2px white;
-        top:90%;
-        left: 10%;
-        /* position:absolute; */
-        /* z-index: 3; */
+        color:white;
+        background-color: rgb(255, 255, 255, .2);
+        text-shadow: 1px 1px palevioletred;
+        border: 2px;
+        border-style: dashed;
+        border-color: goldenrod;
+        &:hover {
+            background-color: rgb(135, 206, 235, .5);
+        }
+    }
+    .image3 {
+        position:relative;
+        height: 600px;
+        width: 1000px;
+        &:hover {
+            border: 10px solid rgba(218, 165, 32, .5);
+        }
     }
 }
 
-.image3 {
-    position:relative;
-    height: 600px;
-    width: 1000px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-}
 
 
 
