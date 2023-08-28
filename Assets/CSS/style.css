@@ -7,6 +7,8 @@
 /* Element Selectors */
 
 body {
+    height: auto;
+    width: 100%;
     padding:1%;
     margin:1%;
     background-color: white;
@@ -15,12 +17,15 @@ body {
 header {
     width: 100%;
     margin: 20px;
-    background-color: white;
     border: 5px;
     border-style: solid;
     border-color:lightgray;
     border-radius: 8px;
+    & nav {
+        display: flex;
+    }
 }
+
 
 .container {
     position: relative;
@@ -42,7 +47,6 @@ header {
         word-spacing:50px;
         letter-spacing: 10px;
         font-size: 30px;
-        list-style-type:none;
         position:absolute;
     }
     & li {
@@ -114,14 +118,15 @@ aside {
 
 section {
     width:80%;
+    margin:30px;
     background-color: #fff;
-    padding: 20px;
+    border-left-style: solid;
+    border-color:lightskyblue;
+
 }
   
 article {
     padding: 10px;
-    border-left-style: solid;
-    border-color:lightskyblue;
     & p {
         padding:15px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -129,14 +134,15 @@ article {
     }
 }
 
+
 .card_feature_project {
-    padding: 20px;
-    border-left-style: solid;
-    border-color:lightskyblue;
+    padding: 5%;
     position: relative;
+    display:flex;
+    justify-content: center;
     & h3 {
         top:88%;
-        left: 2%;
+        left: 37%;
         padding:5px;
         position:absolute;
         font-family: fantasy, cursive;
@@ -153,25 +159,29 @@ article {
         }
     }
     .image3 {
+        width: 100%;
         position:relative;
-        height: 600px;
-        width: 1000px;
         &:hover {
             border: 5px solid rgba(218, 165, 32, .6);
         }
     }
 }
 
-
+.card_container {
+    padding: 20px;
+    position: relative;
+    display:inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 .card_projects {
     padding: 20px;
-    border-left-style: solid;
-    border-color:lightskyblue;
     position: relative;
     & h4 {
         top:80%;
-        left: 5%;
+        left: 7%;
         padding:5px;
         position:absolute;
         font-family: fantasy, cursive;
@@ -201,22 +211,7 @@ article {
 
 /* 
 @media screen and (max-width: 768px) {
-    Use flex-direction to stack the navbar, sidebar, and body 
-    main,
-    nav {
-      flex-direction: column;
-    }
-    Make the sidebar stack below the body 
-    aside {
-      order: 2;
-    }
-    Change the header background 
-    header {
-      background: #772014;
-    }
-    Change the navbar and footer background 
-    nav,
-    footer {
-      background-color: #bb8588;
+    h1 {
+        letter-spacing: 0px;
     }
 } */
