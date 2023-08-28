@@ -7,29 +7,27 @@
 /* Element Selectors */
 
 body {
-    width:100vw;
+    width:100%;
     background-color: white;
 }
 
 header {
-    margin: 20px;
-    width: 100vw;
-    border: 5px;
-    border-style: solid;
-    border-color:lightgray;
+    margin: 1%;
+    width: 100%;
+    border: 5px solid lightgrey;
     border-radius: 8px;
 }
 
 
 .container {
     position: relative;
-    height: 515px;
+    display: flex;
     & h1 {
         position:absolute;
         top: 55%;
-        right: 10%;
+        right: 15%;
         font-family: fantasy, cursive;
-        font-size: 60px;
+        font-size: 350%;
         letter-spacing: 10px;
         color:darkblue;
         text-shadow: 2px 2px white;
@@ -38,13 +36,13 @@ header {
         position:absolute;
         right: 5%;
         bottom: 5%;
-        font-size: 30px;
+        font-size: 175%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         word-spacing:50px;
         letter-spacing: 10px;
     }
     & li {
-        display: inline-block;
+        display:inline-flex;
     }
     & a {
         color:lightpink;
@@ -54,21 +52,19 @@ header {
             border-radius: 8px;
         }
     }
-    .border_right {
-        margin-right: 50px;
-        padding-right: 50px;
-        display: inline-block;
-        border-right-style: solid;
-        border-color:lightskyblue;
-    }
-
 }
 
+.border_right {
+    margin-right: 50px;
+    padding-right: 50px;
+    border-right-style: solid;
+    border-color:lightskyblue;
+}
+
+/* look at set hight for responsive */
 .image1 {
-    height: 500px;
-    width: 100vw;
-    position: relative;
-    display:inline-block;
+    height: 500px; 
+    width: 100%;
     border-radius: 8px;
 }
 .image2 {
@@ -77,31 +73,30 @@ header {
     position:absolute;
     top: 25px;
     left: 10%;
-    background-color: white;
+    border: 2px solid white;
     border-radius: 4px;
 }
 
 main {
-    margin: 20px;
-    width: 100vw;
-    background-color: white;
+    margin: 1%;
+    width: 100%;
     border: 5px solid lightgrey;
     border-radius: 8px;
 }
 
 .container_2 {
-    margin: 10px;
+    margin: 1%;
     display: flex;
 }
 
 aside {
-    padding: 20px;
-    width: 20vw;
+    padding: 1%;
+    width: 20%;
     text-align: center;
     background-color: grey;
     & h2 {
-        padding-top: 10px;
-        bottom: 60%;
+        padding-top: 1%;
+        font-size: 175%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-style:italic;
         word-spacing: 50px;
@@ -112,36 +107,31 @@ aside {
   }
 
 section {
-    width:80vw;
-    margin:30px;
+    width:80%;
+    margin:2%;
     background-color: #fff;
     border-left-style: solid;
     border-color:lightskyblue;
 
 }
   
-article {
-    padding: 10px;
-    & p {
-        padding:15px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-    }
+p {
+    padding:1%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 125%;
 }
-
 
 .card_feature_project {
     padding: 5%;
     position: relative;
-    display:flex;
-    justify-content: center;
     & h3 {
-        padding:5px;
+        padding: .5%;
         position:absolute;
         top:85%;
         left: 37%;
+        font-size: 150%;
         font-family: fantasy, cursive;
-        font-weight: bolder;
         letter-spacing: 10px;
         color:white;
         text-shadow: 1px 1px palevioletred;
@@ -150,7 +140,6 @@ article {
     }
     .image3 {
         width: 100%;
-        position:relative;
         border: 5px solid lightpink;
         &:hover {
             border: 10px solid rgb(218, 165, 32, .5);
@@ -159,25 +148,28 @@ article {
 }
 
 .card_container {
-    padding: 20px;
-    position: relative;
-    display:inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    padding: 1%;
+    width: 40%;
+    /* display: flex; */
     justify-content: center;
 }
 
 .card_projects {
-    padding: 20px;
+    padding: 1%;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     & h4 {
-        padding:5px;
         position:absolute;
         top:75%;
-        left: 17%;
+        left: 9%;
+        font-size: 115%;
+        text-align: center;
         font-family: fantasy, cursive;
         font-weight: bolder;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
         color:white;
         text-shadow: 1px 1px palevioletred;
         background-color: rgb(255, 255, 255, .2);
@@ -185,20 +177,43 @@ article {
     }
     & img {
         position:relative;
-        height: 300px;
-        width: 500px;
+        width: 100%;
         border: 2px solid lightpink;
         &:hover {
             border: 5px solid rgb(135, 206, 235, .5);
         }
     }
 }
- 
-@media screen and (min-width: 768px) {
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+    & ul {
+        font-size: 175%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        word-spacing:50px;
+        letter-spacing: 10px;
+    }
+    & li {
+        padding:15px;
+        display: inline-block;
+        &:hover {
+            background-color:rgb(255, 182, 193, .5);
+            border-radius: 45%;
+    }
+    & a {
+        color: lightskyblue;
+        text-shadow: 2px 2px black;
+        text-decoration:none;
+        }
+    }
+}
+
+/* @media screen and (min-width: 768px) {
     & ul {
         display: flex;
         flex-wrap: wrap;
 
     }
     
-}
+} */
