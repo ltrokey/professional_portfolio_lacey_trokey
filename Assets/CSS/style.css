@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    width: 100vw;
     margin: 20px;
+    width: 100vw;
     border: 5px;
     border-style: solid;
     border-color:lightgray;
@@ -25,6 +25,7 @@ header {
     position: relative;
     height: 515px;
     & h1 {
+        position:absolute;
         top: 55%;
         right: 10%;
         font-family: fantasy, cursive;
@@ -32,12 +33,11 @@ header {
         letter-spacing: 10px;
         color:darkblue;
         text-shadow: 2px 2px white;
-        position:absolute;
     }
     & ul {
-        Right: 5%;
-        bottom: 5%;
         position:absolute;
+        right: 5%;
+        bottom: 5%;
         font-size: 30px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         word-spacing:50px;
@@ -45,18 +45,19 @@ header {
     }
     & li {
         display: inline-block;
+    }
+    & a {
+        color:lightpink;
+        text-decoration:none;
         &:hover {
             background-color: lightgoldenrodyellow;
             border-radius: 8px;
         }
     }
-    & a {
-        color:lightpink;
-        text-decoration:none;
-    }
     .border_right {
         margin-right: 50px;
         padding-right: 50px;
+        display: inline-block;
         border-right-style: solid;
         border-color:lightskyblue;
     }
@@ -66,32 +67,27 @@ header {
 .image1 {
     height: 500px;
     width: 100vw;
-    border-radius: 8px;
     position: relative;
     display:inline-block;
+    border-radius: 8px;
 }
 .image2 {
     height: 275px;
     width: 225px;
+    position:absolute;
     top: 25px;
     left: 10%;
-    position:absolute;
     background-color: white;
-    border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
 }
 
 main {
-    width: 100vw;
     margin: 20px;
+    width: 100vw;
     background-color: white;
-    border: 5px;
-    border-style: solid;
-    border-color:lightgray;
+    border: 5px solid lightgrey;
     border-radius: 8px;
 }
-
 
 .container_2 {
     margin: 10px;
@@ -99,24 +95,24 @@ main {
 }
 
 aside {
-   width: 20%;
+    padding: 20px;
+    width: 20vw;
     text-align: center;
     background-color: grey;
-    padding: 20px;
     & h2 {
         padding-top: 10px;
+        bottom: 60%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-style:italic;
-        color:white;
-        text-shadow: 2px 2px goldenrod;
         word-spacing: 50px;
         letter-spacing: 10px;
-        bottom: 60%;
+        color:white;
+        text-shadow: 2px 2px goldenrod;
     }
   }
 
 section {
-    width:80%;
+    width:80vw;
     margin:30px;
     background-color: #fff;
     border-left-style: solid;
@@ -140,28 +136,24 @@ article {
     display:flex;
     justify-content: center;
     & h3 {
-        top:88%;
-        left: 37%;
         padding:5px;
         position:absolute;
+        top:85%;
+        left: 37%;
         font-family: fantasy, cursive;
         font-weight: bolder;
         letter-spacing: 10px;
         color:white;
-        background-color: rgb(255, 255, 255, .2);
         text-shadow: 1px 1px palevioletred;
-        border: 2px;
-        border-style: dashed;
-        border-color: goldenrod;
-        &:hover {
-            background-color: rgb(135, 206, 235, .5);
-        }
+        background-color: rgb(255, 255, 255, .2);
+        border: 2px dashed goldenrod;
     }
     .image3 {
         width: 100%;
         position:relative;
+        border: 5px solid lightpink;
         &:hover {
-            border: 5px solid rgba(218, 165, 32, .6);
+            border: 10px solid rgb(218, 165, 32, .5);
         }
     }
 }
@@ -172,47 +164,41 @@ article {
     display:inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .card_projects {
     padding: 20px;
     position: relative;
     & h4 {
-        top:80%;
-        left: 7%;
         padding:5px;
         position:absolute;
+        top:75%;
+        left: 17%;
         font-family: fantasy, cursive;
         font-weight: bolder;
         letter-spacing: 10px;
         color:white;
-        background-color: rgb(255, 255, 255, .2);
         text-shadow: 1px 1px palevioletred;
-        border: 2px;
-        border-style: dashed;
-        border-color: goldenrod;
-        &:hover {
-            background-color: rgb(135, 206, 235, .5);
-        }
+        background-color: rgb(255, 255, 255, .2);
+        border: 2px dashed goldenrod;
     }
     & img {
         position:relative;
         height: 300px;
         width: 500px;
+        border: 2px solid lightpink;
         &:hover {
-            border: 10px solid rgba(218, 165, 32, .5);
+            border: 5px solid rgb(135, 206, 235, .5);
         }
     }
 }
-
-
-
  
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
     & ul {
         display: flex;
         flex-wrap: wrap;
+
     }
     
 }
