@@ -7,23 +7,17 @@
 /* Element Selectors */
 
 body {
-    height: auto;
-    width: 100%;
-    padding:1%;
-    margin:1%;
+    width:100vw;
     background-color: white;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     margin: 20px;
     border: 5px;
     border-style: solid;
     border-color:lightgray;
     border-radius: 8px;
-    & nav {
-        display: flex;
-    }
 }
 
 
@@ -43,30 +37,35 @@ header {
     & ul {
         Right: 5%;
         bottom: 5%;
+        position:absolute;
+        font-size: 30px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         word-spacing:50px;
         letter-spacing: 10px;
-        font-size: 30px;
-        position:absolute;
     }
     & li {
         display: inline-block;
-        padding:5px;
-        border-radius: 8px;
         &:hover {
             background-color: lightgoldenrodyellow;
+            border-radius: 8px;
         }
     }
     & a {
         color:lightpink;
         text-decoration:none;
     }
+    .border_right {
+        margin-right: 50px;
+        padding-right: 50px;
+        border-right-style: solid;
+        border-color:lightskyblue;
+    }
 
 }
 
 .image1 {
     height: 500px;
-    width: 100%;
+    width: 100vw;
     border-radius: 8px;
     position: relative;
     display:inline-block;
@@ -84,7 +83,7 @@ header {
 }
 
 main {
-    width: 100%;
+    width: 100vw;
     margin: 20px;
     background-color: white;
     border: 5px;
@@ -209,9 +208,11 @@ article {
 
 
 
-/* 
-@media screen and (max-width: 768px) {
-    h1 {
-        letter-spacing: 0px;
+ 
+@media screen and (min-width: 320px) {
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
     }
-} */
+    
+}
