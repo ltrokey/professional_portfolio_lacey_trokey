@@ -61,6 +61,8 @@ section {
 }
 
 /* Class Selectors */
+
+/* Header & Nav Container */
 .header_container {
     width:100%;
     position: relative;
@@ -90,6 +92,7 @@ section {
     & a {
         color:lightpink;
         text-decoration:none;
+        text-shadow: 2px 2px white;
         &:hover {
             background-color: lightgoldenrodyellow;
             border-radius: 8px;
@@ -104,12 +107,14 @@ section {
     border-color:lightskyblue;
 }
 
+/* Header Background Image */
 .image1 {
     height: 50vh; 
     width: 100%;
     border-radius: 8px;
 }
 
+/* Profile Image */
 .image2 {
     height: 30vh;
     width: auto;
@@ -120,6 +125,7 @@ section {
     border-radius: 4px;
 }
 
+/* Feature Project Image */
 .image3 {
     height: 60vh;
     width: auto;
@@ -129,6 +135,7 @@ section {
     }
 }
 
+/* Footer Image */
 .image4 {
     height: 100px; 
     width: 100%;
@@ -136,16 +143,19 @@ section {
     border-radius: 8px;
 }
 
+/* GitHub Logo */
 .image5 {
     height: auto; 
     width: 5vw;
 }
 
+/* LinkedIn Logo */
 .image6 {
     height: auto; 
     width: 5vw;
 }
 
+/* About, Projects, & Contact Container */
 .container {
     margin: 1%;
     display: flex;
@@ -177,6 +187,7 @@ section {
     }
 }
 
+/* Projects Container */
 .card_container {
     padding: 1%;
     display: flex;
