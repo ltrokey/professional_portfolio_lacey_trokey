@@ -270,12 +270,15 @@ section {
     .header_container {
         padding-bottom: 5%;
         & h1 {
-            font-size: 150%;
+            font-size: 100%;
             top:45%;
             right: 10%;
+            letter-spacing: 1px;
         }
        & ul {
-            font-size: 110%;
+            padding-top: 5%;
+            font-size: 70%;
+            letter-spacing: 1px;
         }
         & li {
             width:100%; 
@@ -311,12 +314,13 @@ section {
     .container {
         flex-direction: column;
         & p {
-            font-size: 100%;
+            font-size: 75%;
         }
     }
     aside {
         & h2 {
-            font-size: 100%;
+            font-size: 75%;
+            letter-spacing: 1px;
         }
     }
     section {
@@ -324,9 +328,10 @@ section {
     }
     .card_feature_project {
         & h3 {
-            top:75%;
-            left: 30%;
+            top:70%;
+            left: 25%;
             font-size: 100%;
+            letter-spacing: 1px;
         }
     }
 
@@ -340,10 +345,10 @@ section {
         flex-direction: column;
         width: auto;
         & h4 {
-            top:80%;
+            top:75%;
             left: 19%;
             font-size: 60%;
-            letter-spacing: 8px;
+            letter-spacing: 1px;
         }
         & img {
             position:relative;
@@ -358,9 +363,9 @@ section {
 
     .contact_container {
         & ul {
-            font-size: 125%;
-            word-spacing:10px;
-            letter-spacing: 5px;
+            font-size: 75%;
+            word-spacing:0px;
+            letter-spacing: 2px;
         }
     }
     
@@ -368,8 +373,8 @@ section {
         position: relative;
         & h3 {
             top:10%;
-            font-size: 90%;
-            letter-spacing: 2px;
+            font-size: 70%;
+            letter-spacing: 0px;
         }
     }
 
