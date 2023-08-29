@@ -35,7 +35,8 @@ main {
 
 aside {
     padding: 1%;
-    width: 20%;
+    width: 20vw;
+    height:auto;
     text-align: center;
     background-color: grey;
     & h2 {
@@ -51,7 +52,8 @@ aside {
   }
 
 section {
-    width:80%;
+    width:80vw;
+    height:auto;
     margin:2%;
     background-color: #fff;
     border-left-style: solid;
@@ -113,13 +115,14 @@ section {
     width: auto;
     position:absolute;
     top: 25px;
-    left: 10%;
+    left: 15%;
     border: 2px solid white;
     border-radius: 4px;
 }
 
 .image3 {
-    width: 100%;
+    height: 60vh;
+    width: auto;
     border: 5px solid lightpink;
     &:hover {
         border: 10px solid rgb(218, 165, 32, .5);
@@ -147,10 +150,12 @@ section {
 .card_feature_project {
     padding: 5%;
     position: relative;
+    display: flex;
+    justify-content: center;
     & h3 {
         padding: .5%;
         position:absolute;
-        top:85%;
+        top:75%;
         left: 37%;
         font-size: 150%;
         font-family: fantasy, cursive;
@@ -200,25 +205,6 @@ section {
     }
 }
 
-.item1 {
-    flex: 1;
-    margin: 5%;
-}
-
-.item2 {
-    flex: 1;
-    margin: 5%;
-}
-
-.item3 {
-    flex: 1;
-    margin: 5%;
-}
-
-.item4 {
-    flex: 1;
-    margin: 5%;
-}
 
 .contact_container {
     display: flex;
@@ -260,24 +246,104 @@ section {
 
 
 @media (max-width: 768px) {
-    
     .header_container {
-        padding-bottom: 10%;
+        padding-bottom: 5%;
+        & h1 {
+            font-size: 150%;
+            top:45%;
+            right: 10%;
+        }
+       & ul {
+            font-size: 120%;
+        }
+        & li {
+            width:100%; 
+            justify-content: flex-end;
+            align-items: bottom;
+         }
     }
+
+    .border_right {
+        border-right: none;
+    }
+
     .image1 {
         height: 30vh;
 
-    } 
+    }
+
     .image2 {
         height: 15vh;
     }
+
+    .image3 {
+        width: 80vw;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        & p {
+            font-size: 100%;
+        }
+    }
     aside {
-        display: none;
+        & h2 {
+            font-size: 100%;
+        }
     }
-    li {
-       flex-direction: row;
-       width:100%; 
-       justify-content: flex-end;
-       align-items: bottom;
+    section {
+        width:98%;
     }
+    .card_feature_project {
+        & h3 {
+            top:75%;
+            left: 30%;
+            font-size: 100%;
+        }
+    }
+
+    .card_container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_projects {
+        flex-direction: column;
+        width: auto;
+        & h4 {
+            top:80%;
+            left: 19%;
+            font-size: 60%;
+            letter-spacing: 8px;
+        }
+        & img {
+            position:relative;
+            width: 50vw;
+            height:auto;
+            border: 2px solid lightpink;
+            &:hover {
+                border: 5px solid rgb(135, 206, 235, .5);
+            }
+        }
+    }
+
+    .contact_container {
+        & ul {
+            font-size: 125%;
+            word-spacing:10px;
+            letter-spacing: 5px;
+        }
+    }
+    
+    .footer_container {
+        position: relative;
+        & h3 {
+            top:10%;
+            font-size: 90%;
+            letter-spacing: 2px;
+        }
+    }
+
 }
