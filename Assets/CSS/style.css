@@ -136,6 +136,16 @@ section {
     border-radius: 8px;
 }
 
+.image5 {
+    height: auto; 
+    width: 5vw;
+}
+
+.image6 {
+    height: auto; 
+    width: 5vw;
+}
+
 .container {
     margin: 1%;
     display: flex;
@@ -254,7 +264,7 @@ section {
             right: 10%;
         }
        & ul {
-            font-size: 120%;
+            font-size: 110%;
         }
         & li {
             width:100%; 
@@ -281,6 +291,12 @@ section {
         height: auto;
     }
 
+    .image5 {
+        width: 10vw;
+    }
+    .image6 {
+        width: 10vw;
+    }
     .container {
         flex-direction: column;
         & p {
