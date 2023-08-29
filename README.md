@@ -1,18 +1,29 @@
 # Professional Portfolio - Lacey Trokey>
 
-[Link to live deploy](add url here)
+[Link to live deploy](https://ltrokey.github.io/professional_portfolio_lacey_trokey/)
 
 ## Description
 
-In my professional portfolio, I've skillfully merged my background in art and construction with my developing expertise as I showcase my HTML and CSS skills through a theme centered around one of my original art pieces. Notably, I've mastered responsive design to ensure seamless cross-device experiences and refined project structuring for better maintainability. Overcoming challenges, the most prominent being integrating a background image extending onto the navigation bar giving the illusion of branches emerging and also adapting the responsive layout from large to small screens, which has added depth to my problem-solving abilities. This portfolio reflects my growth as a developer, embodying the fusion of creativity and technical prowess.
+In my professional portfolio, I've skillfully merged my background in art and construction with my developing expertise as I showcase my HTML and CSS skills through a theme centered around one of my art pieces. Notably, I've mastered responsive design to ensure seamless cross-device experiences and refined project structuring for better maintainability. 
+
+Overcoming challenges, the most prominent being integrating a background image extending onto the navigation bar giving the illusion of branches emerging and also adapting the responsive layout from large to small screens. These challenges have added depth to my problem-solving abilities. This portfolio reflects my growth as a developer, embodying the fusion of creativity and technical prowess.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+### Desktop Screen Viewing
 
-![alt text](assets/images/screenshot.png)
+![Desktop - Top Section](assets/images/screenshot_images/desktop_top_section.png)
+
+![Desktop - Middle Section](assets/images/screenshot_images/desktop_middle_section.png) 
+
+![Desktop - Bottom Section](assets/images/screenshot_images/desktop_bottom_section.png)
+
+### Mobile Screen Viewing (Max-Width: 768px)
+
+![Mobile - Top Section](assets/images/screenshot_images/mobile_top_section.png)
+
+![Mobile - Bottom Section](assets/images/screenshot_images/mobile_bottom_section.png)
 
 ## License
 
